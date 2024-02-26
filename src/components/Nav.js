@@ -1,6 +1,8 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
 import LogoWhite from '../img/logoWhite.png';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 function Nav() {
   const [openMenu, setOpenMenu] = useState(false);
   const toggleMenu = () => {
@@ -18,26 +20,24 @@ function Nav() {
         </button>
         <ul className='navContainer_menu hide'>
           <li className='navContainer_menu--names'>
-            <a
-              className='navContainer_menu--link'
-              href='./LandingPage/LandingPage.js'>
+            <Link className='navContainer_menu--link' to='/'>
               Home
-            </a>
+            </Link>
           </li>
           <li className='navContainer_menu--names'>
-            <a className='navContainer_menu--link' href=''>
+            <Link className='navContainer_menu--link' to='/About'>
               About
-            </a>
+            </Link>
           </li>
           <li className='navContainer_menu--names'>
-            <a className='navContainer_menu--link' href=''>
+            <Link className='navContainer_menu--link' to='/Projects'>
               Projects
-            </a>
+            </Link>
           </li>
           <li className='navContainer_menu--names'>
-            <a className='navContainer_menu--link' href=''>
+            <Link className='navContainer_menu--link' to='/Contact'>
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         {openMenu && (
@@ -47,26 +47,24 @@ function Nav() {
             </button>
             <ul className='openMenu_list'>
               <li className='openMenu_list--names'>
-                <a
-                  className='openMenu_list--link'
-                  href='./LandingPage/LandingPage.js'>
+                <Link className='openMenu_list--link' to='/'>
                   | Home
-                </a>
+                </Link>
               </li>
               <li className='openMenu_list--names'>
-                <a className='openMenu_list--link' href=''>
+                <Link className='openMenu_list--link' to='/About'>
                   | About
-                </a>
+                </Link>
               </li>
               <li className='openMenu_list--names'>
-                <a className='openMenu_list--link' href=''>
+                <Link className='openMenu_list--link' to='/Projects'>
                   | Projects
-                </a>
+                </Link>
               </li>
               <li className='openMenu_list--names'>
-                <a className='openMenu_list--link' href=''>
+                <Link className='openMenu_list--link' to='/Contact'>
                   | Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
