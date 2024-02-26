@@ -1,0 +1,23 @@
+@import 'Variables.scss';
+
+.navContainer {
+  width: 100vw;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  &_logo {
+    width: 20px;
+    height: 20px;
+  }
+  &_hamburgerMenu {
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: transparent;
+  }
+}
+.hamburger-menu-icon {
+  color: white;
+  font-size: 24px;
+}
