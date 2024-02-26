@@ -19,7 +19,7 @@ function Footer() {
           </Link>
         </ul>
         <p className='footerContainer_phrase'>Thanks for watching!</p>
-        <p className='footerContainer_phrase'>
+        <p className='footerContainer_phrase2'>
           Designed and developed by Miriam Paternáin{' '}
           <FaRegHeart className='footerContainer_phrase--heartIcon' /> 2024
         </p>
