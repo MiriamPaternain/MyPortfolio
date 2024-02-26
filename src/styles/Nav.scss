@@ -6,6 +6,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 20px;
+  box-shadow: 0 1px 8px 1px #1d31319e;
   &_logo {
     grid-column-start: 1;
     grid-column-end: 2;
