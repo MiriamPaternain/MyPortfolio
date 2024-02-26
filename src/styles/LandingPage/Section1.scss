@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 150px;
+  max-width: 1024px;
+  margin-top: 60px;
+  @media screen and (min-width: 320px) {
+    margin-top: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+  }
+  @media screen and (min-width: 1024px) {
+    margin-top: 100px;
+  }
+  &_svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    font: 40rem 'Montserrat';
+  }
+  &_words {
+    &--desing {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      z-index: 3;
+      font-family: 'Baloo Paaji 2', sans-serif;
+      letter-spacing: 4px;
+      color: #3a3335;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 1rem;
+      transform: translateX(50px);
+    }
+    &--development {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      z-index: 4;
+      transform: translateX(-45px);
+      font-family: 'Baloo Paaji 2', sans-serif;
+      letter-spacing: 4px;
+      color: #3a3335;
+      background-color: transparent;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+  }
+}
+.g-ants {
+  height: 300px;
+  width: 300px;
+}
+
+.text-copy {
+  z-index: 2;
+  fill: none;
+  height: 300px;
+  width: 300px;
+  stroke: white;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 8px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #8c8d57;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #e1e297;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #e38d87;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #028090;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #3a3335;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}

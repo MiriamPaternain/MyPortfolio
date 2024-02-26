@@ -8,7 +8,7 @@ import Footer from '../Footer';
 function LandingPage() {
   return (
     <>
-      <main>
+      <main className='landingPage'>
         <Nav />
         <Section1 />
         <Section2 />
