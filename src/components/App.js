@@ -1,16 +1,15 @@
-//seccion import
-
-//.- de React, de archivos propios, Sass, Images
+import { Route, Routes } from 'react-router-dom';
 import '../styles/App.scss';
+import LandingPage from './LandingPage/LandingPage';
 
-/*  COMPONENTE */
 function App() {
-  /*
-    Variables de estado, funciones manejadoras de eventos, variables, funcion handle 
-  */
-  /* RETURN --> HTML */
-  return <div>pagina principal</div>;
+  return (
+    <>
+      <Routes>
+        <Route path='/' element={<LandingPage />} />
+      </Routes>
+    </>
+  );
 }
 
-/* export*/
 export default App;
