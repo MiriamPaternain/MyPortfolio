@@ -1,17 +1,52 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
-
+import LogoWhite from '../img/logoWhite.png';
+import { useState } from 'react';
 function Nav() {
+  const [openMenu, setOpenMenu] = useState(false);
+  const toggleMenu = () => {
+    setOpenMenu(!openMenu);
+  };
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
   return (
     <>
       <div className='navContainer'>
-        <img
-          src='../img/logoWhite.png'
-          alt='white logo'
-          className='navContainer_logo'
-        />
-        <button className='navContainer_hamburgerMenu'>
-          {RxHamburgerMenu}
+        <img src={LogoWhite} alt='white logo' className='navContainer_logo' />
+        <button className='navContainer_menuBtn' onClick={toggleMenu}>
+          <RxHamburgerMenu className='hamburger-menu-icon' />
         </button>
+        {openMenu && (
+          <div className='openMenu'>
+            <button className='openMenu_closeMenuBtn' onClick={closeMenu}>
+              X
+            </button>
+            <ul className='openMenu_list'>
+              <li className='openMenu_list--names'>
+                <a
+                  className='openMenu_list--link'
+                  href='./LandingPage/LandingPage.js'>
+                  | Home
+                </a>
+              </li>
+              <li className='openMenu_list--names'>
+                <a className='openMenu_list--link' href=''>
+                  | About
+                </a>
+              </li>
+              <li className='openMenu_list--names'>
+                <a className='openMenu_list--link' href=''>
+                  | Projects
+                </a>
+              </li>
+              <li className='openMenu_list--names'>
+                <a className='openMenu_list--link' href=''>
+                  | Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </>
   );
