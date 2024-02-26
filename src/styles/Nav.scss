@@ -72,9 +72,21 @@
 @media (min-width: 768px) {
   .navContainer {
     &_menu {
+      gap: 20px;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      justify-content: right;
       &--names {
       }
-      &--links {
+      &--link {
+        color: white;
+        text-decoration: none;
+        font-family: $font-family;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      &--link:hover {
+        text-decoration-line: underline;
       }
     }
     &_menuBtn {
@@ -83,5 +95,6 @@
   }
   .hide {
     display: flex;
+    align-items: center;
   }
 }
