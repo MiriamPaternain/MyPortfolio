@@ -16,6 +16,30 @@ function Nav() {
         <button className='navContainer_menuBtn' onClick={toggleMenu}>
           <RxHamburgerMenu className='hamburger-menu-icon' />
         </button>
+        <ul className='navContainer_menu hide'>
+          <li className='navContainer_menu--names'>
+            <a
+              className='navContainer_menu--link'
+              href='./LandingPage/LandingPage.js'>
+              Home
+            </a>
+          </li>
+          <li className='navContainer_menu--names'>
+            <a className='navContainer_menu--link' href=''>
+              About
+            </a>
+          </li>
+          <li className='navContainer_menu--names'>
+            <a className='navContainer_menu--link' href=''>
+              Projects
+            </a>
+          </li>
+          <li className='navContainer_menu--names'>
+            <a className='navContainer_menu--link' href=''>
+              Contact
+            </a>
+          </li>
+        </ul>
         {openMenu && (
           <div className='openMenu'>
             <button className='openMenu_closeMenuBtn' onClick={closeMenu}>
