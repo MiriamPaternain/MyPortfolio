@@ -1,0 +1,19 @@
+@import '../Variables.scss';
+
+.section2Container {
+  width: 100vw;
+  height: 100px;
+  background-color: $primary-color-3;
+  box-shadow: 0 2px 7px 0 $black-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &_phrase {
+    font-family: $font-family;
+    color: $black-color;
+    padding: 16px;
+    letter-spacing: 1px;
+  }
+}
