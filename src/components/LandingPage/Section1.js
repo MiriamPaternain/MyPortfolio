@@ -2,10 +2,10 @@ function Section1() {
   return (
     <>
       <div className='container'>
-        <p className='container_words--desing'>developer</p>
-        <svg className='container_svg' viewBox='0 0 960 600'>
+        <p className='container_words--development'>developer</p>
+        <svg className='container_svg' viewBox='0 0 500 250'>
           <symbol id='s-text'>
-            <text text-anchor='middle' x='50%' y='80%'>
+            <text text-anchor='middle' x='50%' y='120%'>
               &
             </text>
           </symbol>
@@ -18,7 +18,7 @@ function Section1() {
             <use xlinkHref='#s-text' className='text-copy'></use>
           </g>
         </svg>
-        <p className='container_words--development'>designer</p>
+        <p className='container_words--design'>designer</p>
       </div>
     </>
   );

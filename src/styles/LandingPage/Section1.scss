@@ -1,67 +1,54 @@
+@import '../Variables.scss';
+
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap');
 
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   height: 150px;
-  max-width: 1024px;
-  margin-top: 60px;
-  @media screen and (min-width: 320px) {
-    margin-top: 100px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-top: 100px;
-  }
-  @media screen and (min-width: 1024px) {
-    margin-top: 100px;
-  }
+  padding: 20px;
   &_svg {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 700px;
     width: 300px;
-    font: 40rem 'Montserrat';
+    font: 25rem 'Montserrat';
   }
   &_words {
-    &--desing {
+    &--design {
       width: 200px;
       height: 50px;
       display: flex;
-      justify-content: right;
-      align-items: center;
+      justify-content: center;
       z-index: 3;
       font-family: 'Baloo Paaji 2', sans-serif;
       letter-spacing: 4px;
-      color: #3a3335;
+      color: $primary-color;
       background-color: transparent;
       font-weight: 600;
-      font-size: 1rem;
-      transform: translateX(50px);
+      font-size: 1.4rem;
     }
     &--development {
       width: 200px;
       height: 50px;
       display: flex;
-      justify-content: left;
-      align-items: center;
-      z-index: 4;
-      transform: translateX(-45px);
+      justify-content: center;
       font-family: 'Baloo Paaji 2', sans-serif;
+
       letter-spacing: 4px;
-      color: #3a3335;
+      color: $primary-color;
       background-color: transparent;
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
   }
 }
 .g-ants {
-  height: 300px;
+  height: 400px;
   width: 300px;
 }
 
@@ -70,7 +57,7 @@
   fill: none;
   height: 300px;
   width: 300px;
-  stroke: white;
+  stroke: $secondary-color;
   stroke-dasharray: 6% 29%;
   stroke-width: 8px;
   stroke-dashoffset: 0%;
@@ -78,27 +65,27 @@
 }
 
 .text-copy:nth-child(1) {
-  stroke: #8c8d57;
+  stroke: $tertiary-color;
   animation-delay: -1;
 }
 
 .text-copy:nth-child(2) {
-  stroke: #e1e297;
+  stroke: $tertiary-color-2;
   animation-delay: -2s;
 }
 
 .text-copy:nth-child(3) {
-  stroke: #e38d87;
+  stroke: $secondary-color-2;
   animation-delay: -3s;
 }
 
 .text-copy:nth-child(4) {
-  stroke: #028090;
+  stroke: $primary-color;
   animation-delay: -4s;
 }
 
 .text-copy:nth-child(5) {
-  stroke: #3a3335;
+  stroke: $black-color;
   animation-delay: -5s;
 }
 
