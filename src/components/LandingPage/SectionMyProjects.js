@@ -23,7 +23,7 @@ function SectionMyProjects() {
       img: DoLister,
       name: 'Do Lister',
       info: 'Web Development',
-      link: 'https://do-lister-a5h3i818v-miriampaternains-projects.vercel.app/',
+      link: 'https://do-lister.vercel.app/',
     },
   ];
   return (

@@ -84,3 +84,65 @@
     }
   }
 }
+@media (min-width: 768px) {
+  .sectionMyProjectsContainer_article:nth-child(even) {
+    margin-left: auto;
+  }
+  .sectionMyProjectsContainer_article--btnLink:nth-child(even) {
+    margin-left: 8rem;
+  }
+  .sectionMyProjectsContainer_article {
+    border-bottom: 2px solid $primary-color;
+    padding: 2rem;
+    width: 80%;
+    &--block {
+      border: none;
+      height: 9rem;
+    }
+    &--blockImg {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      width: 100%;
+      height: 10rem;
+      border-radius: 0px;
+    }
+    &--blockName {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-left: 10rem;
+    }
+    &--blockInfo {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-left: 10rem;
+    }
+  }
+  .sectionMyProjectsContainer_article:nth-child(odd) {
+    margin-right: auto;
+    .sectionMyProjectsContainer_article {
+      &--block {
+        border: none;
+      }
+      &--blockImg {
+        grid-column-start: 1;
+        grid-column-end: 2;
+      }
+      &--blockName {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-left: 1rem;
+      }
+      &--blockInfo {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-left: 1rem;
+      }
+      &--btnLink {
+        margin-right: 16rem;
+      }
+    }
+  }
+  .sectionMyProjectsContainer_title {
+    margin-left: 10rem;
+  }
+}
