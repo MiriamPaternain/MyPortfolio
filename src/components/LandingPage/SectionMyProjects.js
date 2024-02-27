@@ -1,43 +1,62 @@
 import MyStore from '../../img/My-store.png';
 import GreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
+
 function SectionMyProjects() {
   const projects = [
     {
-      img: { MyStore },
+      index: 1,
+      img: MyStore,
       name: 'My Store',
       info: 'Web Development',
+      link: 'https://miriampaternain.github.io/My-Store/',
     },
     {
-      img: { GreenCoffe },
+      index: 2,
+      img: GreenCoffe,
       name: 'The Green Coffe',
       info: 'Brand Identity',
+      link: 'https://www.behance.net/gallery/163462295/The-Green-Coffee-Diseno-de-marca',
     },
     {
-      img: { DoLister },
+      index: 3,
+      img: DoLister,
       name: 'Do Lister',
       info: 'Web Development',
+      link: 'https://do-lister-a5h3i818v-miriampaternains-projects.vercel.app/',
     },
   ];
   return (
     <>
       <main className='sectionMyProjectsContainer'>
-        <title className='sectionMyProjectsContainer_title'>My PROJECTS</title>
-        <article>
-          <img
-            src={projects.img}
-            alt=''
-            className='sectionMyProjectsContainer_img'
-          />
-          <div className='sectionMyProjectsContainer_infoBlock'>
-            <h1 className='sectionMyProjectsContainer_infoBlock--name'>
-              {projects.name}
-            </h1>
-            <h3 className='sectionMyProjectsContainer_infoBlock--info'>
-              {projects.info}
-            </h3>
-          </div>
-        </article>
+        <h1 className='sectionMyProjectsContainer_title'>My PROJECTS</h1>
+        {projects.map((projects, index) => (
+          <article key={index} className='sectionMyProjectsContainer_article'>
+            <div className='sectionMyProjectsContainer_article--block'>
+              <img
+                src={projects.img}
+                alt=''
+                className='sectionMyProjectsContainer_article--blockImg'
+              />
+              <p className='sectionMyProjectsContainer_article--blockName'>
+                {projects.name}
+              </p>
+              <p className='sectionMyProjectsContainer_article--blockInfo'>
+                {projects.info}
+              </p>
+            </div>
+
+            <a
+              href={projects.link}
+              className='sectionMyProjectsContainer_article--btnLink'
+              target='_blank'
+              rel='noreferrer'>
+              <button className='sectionMyProjectsContainer_article--btn'>
+                see project
+              </button>
+            </a>
+          </article>
+        ))}
       </main>
     </>
   );

@@ -1,0 +1,86 @@
+@import '../Variables.scss';
+
+.sectionMyProjectsContainer {
+  min-height: 100px;
+  margin: 0 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &_title {
+    font-family: $font-family;
+    color: $black-color;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 18rem;
+  }
+  &_article {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    width: 15rem;
+    gap: 10px;
+    &--block {
+      height: 3.8rem;
+      width: 100%;
+      border: 2px solid $primary-color;
+      border-radius: 10px;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+    &--blockImg {
+      width: 6.3rem;
+      height: 4.3rem;
+      border-radius: 10px;
+      border: 1px solid $primary-color;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 4;
+      transform: translateY(-4px);
+    }
+    &--blockName {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      font-family: $font-family;
+      font-weight: 600;
+      font-size: 1rem;
+      color: $primary-color;
+    }
+    &--blockInfo {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      font-size: 0.9rem;
+      font-family: $font-family;
+      color: $primary-color;
+    }
+    &--btn {
+      background-color: transparent;
+      border-radius: 20px;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      height: 30px;
+      width: 130px;
+    }
+    &--btn:hover {
+      color: white;
+      background-color: $primary-color;
+    }
+    &--btnLink {
+      text-decoration: none;
+    }
+    &--btnLink:hover {
+      color: white;
+    }
+  }
+}
