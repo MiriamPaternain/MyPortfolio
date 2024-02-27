@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 import Footer from './Footer';
 import Nav from './Nav';
 import { FiMapPin } from 'react-icons/fi';
@@ -11,12 +12,26 @@ function Contact() {
   const [issue, setIssue] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setName('');
-    setEmail('');
-    setIssue('');
-    setMessage('');
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('issue', issue);
+    formData.append('message', message);
+
+    try {
+      await axios.post(
+        'https://formsubmit.co/miriampaternain@gmail.com',
+        formData
+      );
+      setName('');
+      setEmail('');
+      setIssue('');
+      setMessage('');
+    } catch (error) {
+      console.error('Error sending the form:', error);
+    }
   };
   return (
     <>
@@ -43,8 +58,7 @@ function Contact() {
         <p className='contactContainer_formTitle'>Contact Form</p>
         <form
           onSubmit={handleSubmit}
-          action='https://formsubmit.co/miriampaternain@gmail.com'
-          method='POST'
+          action={`https://formsubmit.co/${process.env.REACT_APP_FORMSUBMIT_ID}`}
           className='contactContainer_form'>
           <label htmlFor='name' className='contactContainer_form--label'>
             Complete name
@@ -52,7 +66,7 @@ function Contact() {
           <input
             type='text'
             id='name'
-            name='Name'
+            name='name'
             placeholder='Miriam Paternáin'
             className='contactContainer_form--input'
             value={name}
@@ -64,7 +78,7 @@ function Contact() {
           <input
             type='text'
             id='email'
-            name='Email'
+            name='email'
             placeholder='example@example.com'
             className='contactContainer_form--input'
             value={email}
@@ -76,7 +90,7 @@ function Contact() {
           <input
             type='text'
             id='issue'
-            name='Issue'
+            name='issue'
             placeholder='Hello!'
             className='contactContainer_form--input'
             value={issue}
