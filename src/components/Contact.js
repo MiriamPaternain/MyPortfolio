@@ -9,7 +9,7 @@ import { LuLinkedin } from 'react-icons/lu';
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [issue, setIssue] = useState('');
+  const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
   const handleSubmit = async (event) => {
@@ -17,7 +17,7 @@ function Contact() {
     const formData = new FormData();
     formData.append('name', name);
     formData.append('email', email);
-    formData.append('issue', issue);
+    formData.append('subject', subject);
     formData.append('message', message);
 
     try {
@@ -27,7 +27,7 @@ function Contact() {
       );
       setName('');
       setEmail('');
-      setIssue('');
+      setSubject('');
       setMessage('');
     } catch (error) {
       console.error('Error sending the form:', error);
@@ -84,17 +84,17 @@ function Contact() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
           />
-          <label htmlFor='issue' className='contactContainer_form--label'>
-            Issue
+          <label htmlFor='subject' className='contactContainer_form--label'>
+            Subject
           </label>
           <input
             type='text'
-            id='issue'
-            name='issue'
+            id='subject'
+            name='subject'
             placeholder='Hello!'
             className='contactContainer_form--input'
-            value={issue}
-            onChange={(event) => setIssue(event.target.value)}
+            value={subject}
+            onChange={(event) => setSubject(event.target.value)}
           />
           <label htmlFor='message' className='contactContainer_form--label'>
             Message
