@@ -1,0 +1,78 @@
+@import './Variables.scss';
+
+.contactContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  &_info {
+    &--words {
+      font-family: $font-family;
+      color: $primary-color;
+      font-size: 0.8rem;
+      height: 2rem;
+      text-decoration: none;
+    }
+    &--icon {
+      margin-right: 0.5rem;
+      transform: translateY(0.1rem);
+    }
+  }
+  &_formTitle {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $black-color;
+  }
+  &_form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 70%;
+    &--label {
+      color: $black-color;
+      font-family: $font-family;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    &--input {
+      background-color: rgba(165, 217, 217, 0.5);
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+    }
+    &--inputMessage {
+      background-color: rgba(165, 217, 217, 0.5);
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      height: 60px;
+    }
+    &--btn {
+      align-self: center;
+      width: 130px;
+      height: 30px;
+      background-color: $primary-color;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      color: white;
+      margin-bottom: 30px;
+      margin-top: 10px;
+    }
+    &--btn:hover {
+      background-color: transparent;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+    }
+  }
+}
+.openLinkedin:hover {
+  cursor: pointer;
+  color: $tertiary-color;
+}
+input::placeholder {
+  color: rgb(187, 185, 185);
+  font-size: 0.6rem;
+}
