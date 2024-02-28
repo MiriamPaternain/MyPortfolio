@@ -13,6 +13,7 @@ import react from '../img/react.png';
 import node from '../img/node.png';
 import git from '../img/git.png';
 import terminal from '../img/terminal.png';
+import { VscDebugBreakpointLog } from 'react-icons/vsc';
 
 function About() {
   return (
@@ -29,7 +30,7 @@ function About() {
         </section>
         <section className='aboutContainer_skills'>
           <div className='aboutContainer_skills--line'></div>
-          <p className='aboutContainer_skills--text'>Skills</p>
+          <p className='aboutContainer_skills--title'>Skills</p>
           <div className='aboutContainer_skills--designIcons'>
             <img className='icon' src={illustrator} alt='illustrator icon' />
             <img src={photoshop} alt='photoshop icon' className='icon' />
@@ -37,6 +38,10 @@ function About() {
             <img src={figma} alt='figma icon' className='icon' />
             <img src={uxUi} alt='uxui icon' className='icon' />
           </div>
+          <div className='aboutContainer_skills--separateLine'>
+            <VscDebugBreakpointLog className='breakPoint' />
+          </div>
+
           <div className='aboutContainer_skills--developmentIcons'>
             <img src={html} alt='html icon' className='icon' />
             <img src={css} alt='css icon' className='icon' />
@@ -48,15 +53,16 @@ function About() {
           </div>
         </section>
         <section className='aboutContainer_softSkills'>
+          <div className='aboutContainer_skills--line'></div>
           <p className='aboutContainer_softSkills--title'>Soft Skills</p>
           <ul className='aboutContainer_softSkills--list'>
-            <li>Problem solving.</li>
-            <li>Critical thinking.</li>
-            <li>Creativity.</li>
-            <li>Empathy.</li>
-            <li>Collaboration.</li>
-            <li>Organized.</li>
-            <li>Time management.</li>
+            <li className='li'>Problem solving.</li>
+            <li className='li'>Critical thinking.</li>
+            <li className='li'>Creativity.</li>
+            <li className='li'>Empathy.</li>
+            <li className='li'>Collaboration.</li>
+            <li className='li'>Organized.</li>
+            <li className='li'>Time management.</li>
           </ul>
         </section>
         <section className='aboutContainer_languages'>
