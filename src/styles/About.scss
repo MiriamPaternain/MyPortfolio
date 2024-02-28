@@ -3,6 +3,7 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
+  width: 100vw;
   &_intro {
     width: 100vw;
 
@@ -31,4 +32,43 @@
       align-items: center;
     }
   }
+  &_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 100%;
+    &--line {
+      border-top: 1px solid $primary-color-3;
+      width: 100%;
+    }
+    &--text {
+      font-family: $font-family;
+      color: $black-color;
+      width: 8rem;
+      height: 1.7rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $primary-color-3;
+      border-radius: 15px;
+      transform: translateY(-50%);
+      margin-bottom: 5px;
+      margin: auto;
+    }
+    &--designIcons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &--developmentIcons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}
+.icon {
+  width: 2rem;
+  height: 2rem;
 }
