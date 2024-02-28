@@ -66,9 +66,11 @@ function About() {
           </ul>
         </section>
         <section className='aboutContainer_languages'>
+          <div className='aboutContainer_skills--line'></div>
+          <p className='aboutContainer_languages--title'>Languages</p>
           <ul className='aboutContainer_languages--list'>
-            <li>English - Advance</li>
-            <li>Spanish - Native</li>
+            <li className='li'>English - Advance</li>
+            <li className='li'>Spanish - Native</li>
           </ul>
         </section>
       </div>
