@@ -1,7 +1,6 @@
 @import './Variables.scss';
 
 .contactContainer {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +60,7 @@
       border-radius: 15px;
       cursor: pointer;
       color: white;
-      margin-bottom: 30px;
+      margin-bottom: 2rem;
       margin-top: 10px;
     }
     &--btn:hover {

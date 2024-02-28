@@ -53,27 +53,29 @@ function About() {
             <img src={terminal} alt='terminal icon' className='icon' />
           </div>
         </section>
-        <section className='aboutContainer_softSkills'>
-          <div className='aboutContainer_skills--line'></div>
-          <p className='aboutContainer_softSkills--title'>Soft Skills</p>
-          <ul className='aboutContainer_softSkills--list'>
-            <li className='li'>Problem solving.</li>
-            <li className='li'>Critical thinking.</li>
-            <li className='li'>Creativity.</li>
-            <li className='li'>Empathy.</li>
-            <li className='li'>Collaboration.</li>
-            <li className='li'>Organized.</li>
-            <li className='li'>Time management.</li>
-          </ul>
-        </section>
-        <section className='aboutContainer_languages'>
-          <div className='aboutContainer_skills--line'></div>
-          <p className='aboutContainer_languages--title'>Languages</p>
-          <ul className='aboutContainer_languages--list'>
-            <li className='li'>English - Advance</li>
-            <li className='li'>Spanish - Native</li>
-          </ul>
-        </section>
+        <div className='softAndLanguages'>
+          <section className='aboutContainer_softSkills'>
+            <div className='aboutContainer_skills--line'></div>
+            <p className='aboutContainer_softSkills--title'>Soft Skills</p>
+            <ul className='aboutContainer_softSkills--list'>
+              <li className='li'>Problem solving.</li>
+              <li className='li'>Critical thinking.</li>
+              <li className='li'>Creativity.</li>
+              <li className='li'>Empathy.</li>
+              <li className='li'>Collaboration.</li>
+              <li className='li'>Organized.</li>
+              <li className='li'>Time management.</li>
+            </ul>
+          </section>
+          <section className='aboutContainer_languages'>
+            <div className='aboutContainer_skills--line  languages'></div>
+            <p className='aboutContainer_languages--title'>Languages</p>
+            <ul className='aboutContainer_languages--list'>
+              <li className='li'>English - Advance</li>
+              <li className='li'>Spanish - Native</li>
+            </ul>
+          </section>
+        </div>
       </div>
 
       <Footer />
