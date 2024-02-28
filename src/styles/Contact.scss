@@ -78,4 +78,18 @@
 input::placeholder {
   color: rgb(187, 185, 185);
   font-size: 0.6rem;
+  font-family: $font-family;
+  letter-spacing: 0.5px;
+}
+textarea::placeholder {
+  color: rgb(187, 185, 185);
+  font-size: 0.6rem;
+  padding-top: 4px;
+  font-family: $font-family;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 1020px) {
+  .contactContainer_form {
+    width: 600px;
+  }
 }

@@ -61,19 +61,19 @@ function Contact() {
           action={`https://formsubmit.co/${process.env.REACT_APP_FORMSUBMIT_ID}`}
           className='contactContainer_form'>
           <label htmlFor='name' className='contactContainer_form--label'>
-            Complete name
+            Complete name / Nombre completo
           </label>
           <input
             type='text'
             id='name'
             name='name'
-            placeholder='Miriam Paternáin'
+            placeholder='Name last Name / Nombre Apellido'
             className='contactContainer_form--input'
             value={name}
             onChange={(event) => setName(event.target.value)}
           />
           <label htmlFor='email' className='contactContainer_form--label'>
-            Your email
+            Your email / Email
           </label>
           <input
             type='text'
@@ -85,7 +85,7 @@ function Contact() {
             onChange={(event) => setEmail(event.target.value)}
           />
           <label htmlFor='subject' className='contactContainer_form--label'>
-            Subject
+            Subject / Asunto
           </label>
           <input
             type='text'
@@ -97,9 +97,9 @@ function Contact() {
             onChange={(event) => setSubject(event.target.value)}
           />
           <label htmlFor='message' className='contactContainer_form--label'>
-            Message
+            Message / Mensaje
           </label>
-          <input
+          <textarea
             type='text'
             id='message'
             name='Message'
@@ -109,7 +109,7 @@ function Contact() {
             onChange={(event) => setMessage(event.target.value)}
           />
           <button className='contactContainer_form--btn' type='submit'>
-            Send Message
+            Send / Enviar
           </button>
         </form>
       </div>
