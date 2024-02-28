@@ -28,6 +28,7 @@ function About() {
             to improve my own version
           </p>
         </section>
+
         <section className='aboutContainer_skills'>
           <div className='aboutContainer_skills--line'></div>
           <p className='aboutContainer_skills--title'>Skills</p>
