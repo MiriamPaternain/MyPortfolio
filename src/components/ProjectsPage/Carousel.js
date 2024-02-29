@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -8,34 +8,31 @@ import DoLister from '../../img/Do Lister.png';
 import ThumbnailCarousel from './ThumbnailCarousel';
 import { Link } from 'react-router-dom';
 
-class Carousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      selectedIndex: 0,
-    };
-  }
+const Carousel = () => {
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const carouselRef = useRef();
 
-  handleThumbnailClick = (index) => {
-    this.setState({ selectedIndex: index });
+  const images = [MyStore, TheGreenCoffe, DoLister];
+  const projectNames = ['MyStore', 'TheGreenCoffe', 'DoLister'];
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    afterChange: (index) => setSelectedIndex(index),
   };
 
-  render() {
-    const images = [MyStore, TheGreenCoffe, DoLister];
-    const projectNames = ['MyStore', 'TheGreenCoffe', 'DoLister'];
+  const handleThumbnailClick = (index) => {
+    setSelectedIndex(index);
+    carouselRef.current.slickGoTo(index);
+  };
 
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      afterChange: (index) => this.setState({ selectedIndex: index }),
-    };
-
-    return (
-      <div className='carouselContainer'>
-        <Slider {...settings} className='carouselContainer_slider'>
+  return (
+    <div className='carouselContainer'>
+      <div className='carouselContainer_slider'>
+        <Slider ref={carouselRef} {...settings}>
           {images.map((image, index) => (
             <div key={index} className='carouselContainer_slider--slide'>
               <Link to={`/Projects/${projectNames[index]}`}>
@@ -48,14 +45,14 @@ class Carousel extends React.Component {
             </div>
           ))}
         </Slider>
-        <ThumbnailCarousel
-          images={images}
-          onClickThumbnail={this.handleThumbnailClick}
-          selectedIndex={this.state.selectedIndex}
-        />
       </div>
-    );
-  }
-}
+      <ThumbnailCarousel
+        images={images}
+        selectedIndex={selectedIndex}
+        onClickThumbnail={handleThumbnailClick}
+      />
+    </div>
+  );
+};
 
 export default Carousel;
