@@ -1,3 +1,5 @@
+@import '../Variables.scss';
+
 .carouselContainer {
   display: flex;
   flex-direction: column;
@@ -11,17 +13,19 @@
 
   &_slider {
     max-width: 100%;
+
     @media (min-width: 768px) {
       margin: 0 auto;
       width: 60%;
     }
-    @media (min-width: 1024px) {
-      margin: 0 auto;
-      width: 80%;
-    }
+
     &--slide {
       display: flex;
       justify-content: center;
+      @media (min-width: 1024px) {
+        margin: 0 auto;
+        width: 80%;
+      }
     }
     &--img {
       max-width: 100%;
@@ -32,4 +36,29 @@
       margin: auto;
     }
   }
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+  color: $primary-color;
+  display: none;
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
+
+.custom-prev {
+  left: -3rem;
+}
+
+.custom-next {
+  right: -3rem;
 }

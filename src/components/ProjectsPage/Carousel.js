@@ -7,6 +7,8 @@ import TheGreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
 import ThumbnailCarousel from './ThumbnailCarousel';
 import { Link } from 'react-router-dom';
+import { IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const Carousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -18,11 +20,12 @@ const Carousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    arrows: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     afterChange: (index) => setSelectedIndex(index),
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
   };
 
   const handleThumbnailClick = (index) => {
@@ -36,7 +39,9 @@ const Carousel = () => {
         <Slider ref={carouselRef} {...settings}>
           {images.map((image, index) => (
             <div key={index} className='carouselContainer_slider--slide'>
-              <Link to={`/Projects/${projectNames[index]}`}>
+              <Link
+                to={`/Projects/${projectNames[index]}`}
+                className='carouselContainer_slider--slide'>
                 <img
                   src={image}
                   alt={`Img ${index}`}
@@ -55,5 +60,21 @@ const Carousel = () => {
     </div>
   );
 };
+const CustomPrevArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className='custom-arrow custom-prev' onClick={onClick}>
+      <IoIosArrowBack />
+    </div>
+  );
+};
 
+const CustomNextArrow = (props) => {
+  const { onClick } = props;
+  return (
+    <div className='custom-arrow custom-next' onClick={onClick}>
+      <IoIosArrowForward />
+    </div>
+  );
+};
 export default Carousel;
