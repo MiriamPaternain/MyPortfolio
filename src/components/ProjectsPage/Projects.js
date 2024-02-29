@@ -6,6 +6,7 @@ function Projects() {
   return (
     <>
       <Nav />
+
       <Carousel />
       <Footer />
     </>
