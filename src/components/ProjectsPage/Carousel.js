@@ -51,7 +51,8 @@ class Carousel extends React.Component {
         <ThumbnailCarousel
           images={images}
           onClickThumbnail={this.handleThumbnailClick}
-        />{' '}
+          selectedIndex={this.state.selectedIndex}
+        />
       </div>
     );
   }

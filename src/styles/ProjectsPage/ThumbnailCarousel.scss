@@ -19,3 +19,7 @@
 .thumbnail-carousel img.selected {
   border: 2px solid blue;
 }
+
+.thumbnail-active {
+  border: 3px solid $primary-color-3;
+}

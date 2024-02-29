@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ThumbnailCarousel = ({ images, onClickThumbnail }) => {
+const ThumbnailCarousel = ({ images, onClickThumbnail, selectedIndex }) => {
   return (
     <div className='thumbnail-carousel'>
       {images.map((image, index) => (
@@ -9,6 +9,7 @@ const ThumbnailCarousel = ({ images, onClickThumbnail }) => {
           src={image}
           alt={`Thumbnail ${index}`}
           onClick={() => onClickThumbnail(index)}
+          className={index === selectedIndex ? 'thumbnail-active' : ''}
         />
       ))}
     </div>
