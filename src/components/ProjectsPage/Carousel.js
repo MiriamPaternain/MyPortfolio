@@ -6,6 +6,7 @@ import MyStore from '../../img/My-store.png';
 import TheGreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
 import ThumbnailCarousel from './ThumbnailCarousel';
+import { Link } from 'react-router-dom';
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class Carousel extends React.Component {
 
   render() {
     const images = [MyStore, TheGreenCoffe, DoLister];
+    const projectNames = ['MyStore', 'TheGreenCoffe', 'DoLister'];
 
     const settings = {
       dots: true,
@@ -36,11 +38,13 @@ class Carousel extends React.Component {
         <Slider {...settings} className='carouselContainer_slider'>
           {images.map((image, index) => (
             <div key={index} className='carouselContainer_slider--slide'>
-              <img
-                src={image}
-                alt={`Img ${index}`}
-                className='carouselContainer_slider--img'
-              />
+              <Link to={`/Projects/${projectNames[index]}`}>
+                <img
+                  src={image}
+                  alt={`Img ${index}`}
+                  className='carouselContainer_slider--img'
+                />
+              </Link>
             </div>
           ))}
         </Slider>
