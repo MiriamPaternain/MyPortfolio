@@ -1,0 +1,23 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  gap: 2rem;
+  width: 90vw;
+
+  &_slider {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    &--slide {
+      display: flex;
+      justify-content: center;
+    }
+    &--img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

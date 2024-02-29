@@ -6,7 +6,19 @@ import MyStore from '../../img/My-store.png';
 import TheGreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
 import ThumbnailCarousel from './ThumbnailCarousel';
+
 class Carousel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedIndex: 0,
+    };
+  }
+
+  handleThumbnailClick = (index) => {
+    this.setState({ selectedIndex: index });
+  };
+
   render() {
     const images = [MyStore, TheGreenCoffe, DoLister];
 
@@ -16,18 +28,26 @@ class Carousel extends React.Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      afterChange: (index) => this.setState({ selectedIndex: index }),
     };
 
     return (
-      <div>
-        <Slider {...settings}>
+      <div className='carouselContainer'>
+        <Slider {...settings} className='carouselContainer_slider'>
           {images.map((image, index) => (
-            <div key={index}>
-              <img src={image} alt={`Img ${index}`} />
+            <div key={index} className='carouselContainer_slider--slide'>
+              <img
+                src={image}
+                alt={`Img ${index}`}
+                className='carouselContainer_slider--img'
+              />
             </div>
           ))}
         </Slider>
-        <ThumbnailCarousel images={images} />
+        <ThumbnailCarousel
+          images={images}
+          onClickThumbnail={this.handleThumbnailClick}
+        />{' '}
       </div>
     );
   }
