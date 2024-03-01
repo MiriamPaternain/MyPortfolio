@@ -9,6 +9,10 @@ import git from '../../../img/git.png';
 import terminal from '../../../img/terminal.png';
 import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
+import productDetail from '../../../img/MyStore/ProductDetail.png';
+import addToCart from '../../../img/MyStore/AddToCart.png';
+import products from '../../../img/MyStore/Products.png';
+import shoppingCart from '../../../img/MyStore/ShoppingCart.png';
 
 function MyStore() {
   return (
@@ -17,9 +21,10 @@ function MyStore() {
       <main className='myStoreContainer'>
         <p className='myStoreContainer_title'>My Store</p>
         <p className='myStoreContainer_resume'>
-          It is a shopping web application. I have used a fake API to simulate
-          the products. Users can filter products by categories and add them to
-          the shopping cart. Each product has its own sheet with details.
+          My Store is a shopping web application. I have used a fake API to
+          simulate the products. Users can filter products by categories and add
+          them to the shopping cart. Each product has its own sheet with
+          details.
         </p>
         <p className='myStoreContainer_skillsTitle'>Skills:</p>
         <div className='myStoreContainer_skills'>
@@ -42,7 +47,7 @@ function MyStore() {
           rel='noreferrer'
           className='myStoreContainer_link'>
           <button className='myStoreContainer_link--btn'>
-            <FaGithub className='myStoreContainer_btn--icon' /> Github
+            <FaGithub className='myStoreContainer_link--icon' /> Github
           </button>
         </a>
         <a
@@ -51,12 +56,13 @@ function MyStore() {
           rel='noreferrer'
           className='myStoreContainer_link'>
           <button className='myStoreContainer_link--btn'>
-            <TfiWorld className='myStoreContainer_btn--icon' /> Link to web
+            <TfiWorld className='myStoreContainer_link--icon' /> Link to web
           </button>
         </a>
-        <img src='' alt='' className='myStoreContainer_img' />
-        <img src='' alt='' className='myStoreContainer_img' />
-        <img src='' alt='' className='myStoreContainer_img' />
+        <img src={productDetail} alt='' className='myStoreContainer_img' />
+        <img src={addToCart} alt='' className='myStoreContainer_img' />
+        <img src={products} alt='' className='myStoreContainer_img' />
+        <img src={shoppingCart} alt='' className='myStoreContainer_img' />
       </main>
       <Footer />
     </>

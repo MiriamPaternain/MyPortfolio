@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import MyStore from '../../img/My-store.png';
+import MyStore from '../../img/MyStore/My-store.png';
 import TheGreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
 import ThumbnailCarousel from './ThumbnailCarousel';

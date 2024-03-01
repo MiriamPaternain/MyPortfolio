@@ -1,4 +1,4 @@
-import MyStore from '../../img/My-store.png';
+import MyStore from '../../img/MyStore/My-store.png';
 import GreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
 
