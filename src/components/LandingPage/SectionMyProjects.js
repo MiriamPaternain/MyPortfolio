@@ -1,6 +1,7 @@
 import MyStore from '../../img/MyStore/My-store.png';
 import GreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
+import { Link } from 'react-router-dom';
 
 function SectionMyProjects() {
   const projects = [
@@ -9,21 +10,21 @@ function SectionMyProjects() {
       img: MyStore,
       name: 'My Store',
       info: 'Web Development',
-      link: 'https://miriampaternain.github.io/My-Store/',
+      link: '/Projects/MyStore',
     },
     {
       index: 2,
       img: GreenCoffe,
       name: 'The Green Coffe',
       info: 'Brand Identity',
-      link: 'https://www.behance.net/gallery/163462295/The-Green-Coffee-Diseno-de-marca',
+      link: '/Projects/TheGreenCoffe',
     },
     {
       index: 3,
       img: DoLister,
       name: 'Do Lister',
       info: 'Web Development',
-      link: 'https://do-lister.vercel.app/',
+      link: '/Projects/DoLister',
     },
   ];
   return (
@@ -46,15 +47,15 @@ function SectionMyProjects() {
               </p>
             </div>
 
-            <a
-              href={projects.link}
+            <Link
+              to={projects.link}
               className='sectionMyProjectsContainer_article--btnLink'
               target='_blank'
               rel='noreferrer'>
               <button className='sectionMyProjectsContainer_article--btn'>
                 see project
               </button>
-            </a>
+            </Link>
           </article>
         ))}
       </main>
