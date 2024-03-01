@@ -9,10 +9,10 @@ import git from '../../../img/git.png';
 import terminal from '../../../img/terminal.png';
 import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
-import productDetail from '../../../img/MyStore/ProductDetail.png';
-import addToCart from '../../../img/MyStore/AddToCart.png';
-import products from '../../../img/MyStore/Products.png';
-import shoppingCart from '../../../img/MyStore/ShoppingCart.png';
+import productDetail from '../../../img/MyStore/productdetail.png';
+import addToCart from '../../../img/MyStore/addtocart.png';
+import products from '../../../img/MyStore/products.png';
+import shoppingCart from '../../../img/MyStore/shoppingcart.png';
 
 function MyStore() {
   return (
