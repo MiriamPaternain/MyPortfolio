@@ -2,6 +2,7 @@
 
 .myStoreContainer {
   max-width: 900px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
@@ -38,6 +39,11 @@
     justify-content: center;
     flex-direction: row;
     margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      justify-content: left;
+      margin-left: 1rem;
+      width: 50%;
+    }
     &--icon {
       width: 3rem;
     }
@@ -51,6 +57,9 @@
     border-radius: 15px;
     cursor: pointer;
     color: white;
+    @media screen and (min-width: 768px) {
+      transform: translate(200%, -480%);
+    }
 
     &--btn {
       margin: auto;
@@ -76,6 +85,9 @@
 
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
+    @media screen and (min-width: 768px) {
+      transform: translateY(-20%);
+    }
   }
 }
 
