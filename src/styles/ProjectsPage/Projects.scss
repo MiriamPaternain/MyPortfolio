@@ -19,11 +19,15 @@
     color: $black-color;
     margin-left: 1rem;
     margin-right: 1rem;
+    line-height: 1.5rem;
   }
   &_skillsTitle {
     font-family: $font-family;
     color: $black-color;
     margin-left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: -1rem;
   }
   &_skills {
     display: flex;
@@ -31,11 +35,12 @@
     gap: 0.5rem;
     justify-content: center;
     flex-direction: row;
+
     &--icon {
       width: 3rem;
     }
   }
-  &_btn {
+  &_link {
     margin: auto;
     width: 130px;
     height: 30px;
@@ -44,6 +49,16 @@
     border-radius: 15px;
     cursor: pointer;
     color: white;
+    &--btn {
+      margin: auto;
+      width: 130px;
+      height: 30px;
+      background-color: $primary-color;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      color: white;
+    }
     &--icon {
     }
   }

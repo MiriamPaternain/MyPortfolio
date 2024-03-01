@@ -21,7 +21,7 @@ function MyStore() {
           the products. Users can filter products by categories and add them to
           the shopping cart. Each product has its own sheet with details.
         </p>
-        <p className='myStoreContainer_skillsTitle'>Skills</p>
+        <p className='myStoreContainer_skillsTitle'>Skills:</p>
         <div className='myStoreContainer_skills'>
           <img src={html} alt='' className='myStoreContainer_skills--icon' />
           <img src={css} alt='' className='myStoreContainer_skills--icon' />
@@ -36,12 +36,24 @@ function MyStore() {
           />
         </div>
 
-        <button className='myStoreContainer_btn'>
-          <FaGithub className='myStoreContainer_btn--icon' /> Github
-        </button>
-        <button className='myStoreContainer_btn'>
-          <TfiWorld className='myStoreContainer_btn--icon' /> Link to web
-        </button>
+        <a
+          href='https://github.com/MiriamPaternain/My-Store'
+          target='_blank'
+          rel='noreferrer'
+          className='myStoreContainer_link'>
+          <button className='myStoreContainer_link--btn'>
+            <FaGithub className='myStoreContainer_btn--icon' /> Github
+          </button>
+        </a>
+        <a
+          href='https://miriampaternain.github.io/My-Store/'
+          target='_blank'
+          rel='noreferrer'
+          className='myStoreContainer_link'>
+          <button className='myStoreContainer_link--btn'>
+            <TfiWorld className='myStoreContainer_btn--icon' /> Link to web
+          </button>
+        </a>
         <img src='' alt='' className='myStoreContainer_img' />
         <img src='' alt='' className='myStoreContainer_img' />
         <img src='' alt='' className='myStoreContainer_img' />
