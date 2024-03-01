@@ -1,6 +1,7 @@
 @import '../Variables.scss';
 
 .myStoreContainer {
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   margin-top: 7rem;
@@ -12,14 +13,15 @@
     font-size: 2rem;
     width: 100%;
     justify-content: center;
-    color: $black-color;
+    color: $primary-color;
   }
   &_resume {
     font-family: $font-family;
     color: $black-color;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
     line-height: 1.5rem;
+    background-color: $primary-color-3;
+    box-shadow: 0 1px 8px 1px #1d313181;
   }
   &_skillsTitle {
     font-family: $font-family;
@@ -35,7 +37,7 @@
     gap: 0.5rem;
     justify-content: center;
     flex-direction: row;
-
+    margin-bottom: 2rem;
     &--icon {
       width: 3rem;
     }
@@ -49,6 +51,7 @@
     border-radius: 15px;
     cursor: pointer;
     color: white;
+
     &--btn {
       margin: auto;
       width: 130px;
