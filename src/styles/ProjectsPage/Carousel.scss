@@ -4,16 +4,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 8rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 7rem;
+
   gap: 3rem;
   width: 90vw;
-
+  position: relative;
+  max-width: 1200px;
+  margin: 8rem auto;
   &_slider {
     max-width: 100%;
-
+    justify-self: center;
     @media (min-width: 768px) {
       margin: 0 auto;
       width: 60%;
@@ -22,9 +21,13 @@
     &--slide {
       display: flex;
       justify-content: center;
+      justify-items: center;
+      justify-self: center;
       @media (min-width: 1024px) {
+        justify-self: center;
         margin: 0 auto;
         width: 80%;
+        max-width: 1200px;
       }
     }
     &--img {
@@ -52,13 +55,21 @@
   display: none;
   @media (min-width: 768px) {
     display: inline;
+    max-width: 1200px;
+    justify-self: center;
   }
 }
 
 .custom-prev {
   left: -3rem;
+  @media (min-width: 1024px) {
+    left: 0;
+  }
 }
 
 .custom-next {
   right: -3rem;
+  @media (min-width: 1024px) {
+    right: 0;
+  }
 }
