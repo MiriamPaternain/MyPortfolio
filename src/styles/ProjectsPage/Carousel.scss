@@ -3,13 +3,17 @@
 .carouselContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
+  align-items: center;
   gap: 3rem;
   width: 90vw;
+
   position: relative;
   max-width: 1200px;
-  margin: 8rem auto;
+  margin: 10rem auto;
+  @media (min-width: 768px) {
+    margin: 15rem auto;
+  }
   &_slider {
     max-width: 100%;
     justify-self: center;
