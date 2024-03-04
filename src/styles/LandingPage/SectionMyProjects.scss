@@ -2,20 +2,22 @@
 
 .sectionMyProjectsContainer {
   min-height: 100px;
-  margin: 0 20px 0 20px;
+  margin: 50px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+
   &_title {
     font-family: $font-family;
     color: $black-color;
     font-size: 1.4rem;
     font-weight: 600;
     width: 18rem;
+    @media (min-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
   &_article {
     display: flex;
@@ -24,6 +26,7 @@
     align-items: center;
     width: 15rem;
     gap: 10px;
+
     &--block {
       height: 3.8rem;
       width: 100%;
@@ -33,9 +36,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
+      @media (min-width: 768px) {
+        width: 83%;
+      }
     }
     &--blockImg {
-      width: 6.3rem;
+      width: 6.4rem;
       height: 4.3rem;
       border-radius: 10px;
       border: 1px solid $primary-color;
@@ -174,13 +180,13 @@
     &--blockName {
       grid-column-start: 1;
       grid-column-end: 2;
-      margin-left: 15rem;
+      margin-left: 11.5rem;
       font-size: 1.5rem;
     }
     &--blockInfo {
       grid-column-start: 1;
       grid-column-end: 2;
-      margin-left: 15rem;
+      margin-left: 11.5rem;
       transform: translateY(-2rem);
       font-size: 1rem;
     }
