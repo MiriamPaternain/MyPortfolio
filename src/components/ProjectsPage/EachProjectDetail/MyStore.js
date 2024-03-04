@@ -9,7 +9,7 @@ import git from '../../../img/git.png';
 import terminal from '../../../img/terminal.png';
 import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
-import productDetail from '../../../img/MyStore/productdetail.png';
+import productDetail from '../../../img/productdetail.png';
 function MyStore() {
   return (
     <>
