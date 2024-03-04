@@ -10,9 +10,9 @@ import terminal from '../../../img/terminal.png';
 import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
 /* import productDetail from '../../../img/MyStore/productdetail.png'; */
-import addToCart from '../../../img/MyStore/addtocart.png';
+/* import addToCart from '../../../img/MyStore/addtocart.png';
 import products from '../../../img/MyStore/products.png';
-import shoppingCart from '../../../img/MyStore/shoppingcart.png';
+import shoppingCart from '../../../img/MyStore/shoppingcart.png'; */
 
 function MyStore() {
   return (
@@ -60,9 +60,9 @@ function MyStore() {
           </button>
         </a>
         {/*  <img src={productDetail} alt='' className='myStoreContainer_img' /> */}
-        <img src={addToCart} alt='' className='myStoreContainer_img' />
+        {/* <img src={addToCart} alt='' className='myStoreContainer_img' />
         <img src={products} alt='' className='myStoreContainer_img' />
-        <img src={shoppingCart} alt='' className='myStoreContainer_img' />
+        <img src={shoppingCart} alt='' className='myStoreContainer_img' /> */}
       </main>
       <Footer />
     </>
