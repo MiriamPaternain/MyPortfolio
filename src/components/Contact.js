@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import Footer from './Footer';
 import Nav from './Nav';
@@ -9,6 +9,7 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
   const form = useRef();
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,6 +25,8 @@ function Contact() {
       .then(
         () => {
           console.log('SUCCESS!');
+          setShowSuccessMessage(true);
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -97,6 +100,12 @@ function Contact() {
           <button className='contactContainer_form--btn' type='submit'>
             Send / Enviar
           </button>
+          {showSuccessMessage && (
+            <p className='contactContainer_succesMessage'>
+              ¡Gracias por tu mensaje! Me pondré en contacto contigo lo antes
+              posible
+            </p>
+          )}
         </form>
       </div>
       <Footer />
