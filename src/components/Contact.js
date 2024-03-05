@@ -102,8 +102,9 @@ function Contact() {
           </button>
           {showSuccessMessage && (
             <p className='contactContainer_succesMessage'>
-              ¡Gracias por tu mensaje! Me pondré en contacto contigo lo antes
-              posible
+              ¡Gracias por tu mensaje! <br />
+              <br />
+              Me pondré en contacto contigo lo antes posible
             </p>
           )}
         </form>
