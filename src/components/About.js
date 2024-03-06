@@ -14,71 +14,106 @@ import node from '../img/node.png';
 import git from '../img/git.png';
 import terminal from '../img/terminal.png';
 import { VscDebugBreakpointLog } from 'react-icons/vsc';
+import { useEffect, useState } from 'react';
 
 function About() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <>
-      <Nav />
-      <div className='aboutContainer'>
-        <section className='aboutContainer_intro'>
-          <img src={introImg} alt='' className='aboutContainer_intro--img' />
-          <p className='aboutContainer_intro--text'>
-            Hi! I'm Miriam, a curious human. My motto is keep swimming no matter
-            what problems arise along the way. My goal: always continue learning
-            to improve my own version
-          </p>
-        </section>
-
-        <section className='aboutContainer_skills'>
-          <div className='aboutContainer_skills--line'></div>
-          <p className='aboutContainer_skills--title'>Skills</p>
-          <div className='aboutContainer_skills--designIcons'>
-            <img className='icon' src={illustrator} alt='illustrator icon' />
-            <img src={photoshop} alt='photoshop icon' className='icon' />
-            <img src={indesign} alt='indesign icon' className='icon' />
-            <img src={figma} alt='figma icon' className='icon' />
-            <img src={uxUi} alt='uxui icon' className='icon' />
+      {loading ? (
+        <div className='loader'>
+          {/*  <img src={backgroundLoader} alt='loading...' className='loader_img' /> */}
+          <div class='lds-roller'>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-          <div className='aboutContainer_skills--separateLine'>
-            <VscDebugBreakpointLog className='breakPoint' />
-          </div>
-
-          <div className='aboutContainer_skills--developmentIcons'>
-            <img src={html} alt='html icon' className='icon' />
-            <img src={css} alt='css icon' className='icon' />
-            <img src={js} alt='javascript icon' className='icon' />
-            <img src={react} alt='react icon' className='icon' />
-            <img src={node} alt='node js icon' className='icon' />
-            <img src={git} alt='git icon' className='icon' />
-            <img src={terminal} alt='terminal icon' className='icon' />
-          </div>
-        </section>
-        <div className='softAndLanguages'>
-          <section className='aboutContainer_softSkills'>
-            <div className='aboutContainer_skills--line'></div>
-            <p className='aboutContainer_softSkills--title'>Soft Skills</p>
-            <ul className='aboutContainer_softSkills--list'>
-              <li className='li'>Problem solving.</li>
-              <li className='li'>Critical thinking.</li>
-              <li className='li'>Creativity.</li>
-              <li className='li'>Empathy.</li>
-              <li className='li'>Collaboration.</li>
-              <li className='li'>Organized.</li>
-              <li className='li'>Time management.</li>
-            </ul>
-          </section>
-          <section className='aboutContainer_languages'>
-            <div className='aboutContainer_skills--line  languages'></div>
-            <p className='aboutContainer_languages--title'>Languages</p>
-            <ul className='aboutContainer_languages--list'>
-              <li className='li'>English - Advance</li>
-              <li className='li'>Spanish - Native</li>
-            </ul>
-          </section>
         </div>
-      </div>
+      ) : (
+        <>
+          <Nav />
+          <div className='aboutContainer'>
+            <section className='aboutContainer_intro'>
+              <img
+                src={introImg}
+                alt=''
+                className='aboutContainer_intro--img'
+              />
+              <p className='aboutContainer_intro--text'>
+                Hi! I'm Miriam, a curious human. My motto is keep swimming no
+                matter what problems arise along the way. My goal: always
+                continue learning to improve my own version
+              </p>
+            </section>
 
-      <Footer />
+            <section className='aboutContainer_skills'>
+              <div className='aboutContainer_skills--line'></div>
+              <p className='aboutContainer_skills--title'>Skills</p>
+              <div className='aboutContainer_skills--designIcons'>
+                <img
+                  className='icon'
+                  src={illustrator}
+                  alt='illustrator icon'
+                />
+                <img src={photoshop} alt='photoshop icon' className='icon' />
+                <img src={indesign} alt='indesign icon' className='icon' />
+                <img src={figma} alt='figma icon' className='icon' />
+                <img src={uxUi} alt='uxui icon' className='icon' />
+              </div>
+              <div className='aboutContainer_skills--separateLine'>
+                <VscDebugBreakpointLog className='breakPoint' />
+              </div>
+
+              <div className='aboutContainer_skills--developmentIcons'>
+                <img src={html} alt='html icon' className='icon' />
+                <img src={css} alt='css icon' className='icon' />
+                <img src={js} alt='javascript icon' className='icon' />
+                <img src={react} alt='react icon' className='icon' />
+                <img src={node} alt='node js icon' className='icon' />
+                <img src={git} alt='git icon' className='icon' />
+                <img src={terminal} alt='terminal icon' className='icon' />
+              </div>
+            </section>
+            <div className='softAndLanguages'>
+              <section className='aboutContainer_softSkills'>
+                <div className='aboutContainer_skills--line'></div>
+                <p className='aboutContainer_softSkills--title'>Soft Skills</p>
+                <ul className='aboutContainer_softSkills--list'>
+                  <li className='li'>Problem solving.</li>
+                  <li className='li'>Critical thinking.</li>
+                  <li className='li'>Creativity.</li>
+                  <li className='li'>Empathy.</li>
+                  <li className='li'>Collaboration.</li>
+                  <li className='li'>Organized.</li>
+                  <li className='li'>Time management.</li>
+                </ul>
+              </section>
+              <section className='aboutContainer_languages'>
+                <div className='aboutContainer_skills--line  languages'></div>
+                <p className='aboutContainer_languages--title'>Languages</p>
+                <ul className='aboutContainer_languages--list'>
+                  <li className='li'>English - Advance</li>
+                  <li className='li'>Spanish - Native</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+
+          <Footer />
+        </>
+      )}
     </>
   );
 }
