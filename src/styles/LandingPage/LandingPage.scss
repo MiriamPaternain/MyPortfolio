@@ -9,8 +9,22 @@
 }
 .loader {
   width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url('../../img/fondo\ loading.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &_img {
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 }
 .lds-roller {
@@ -18,7 +32,6 @@
   position: relative;
   width: 80px;
   height: 80px;
-  transform: translate(220%, -400%);
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
