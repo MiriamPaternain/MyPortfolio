@@ -2,6 +2,7 @@ import MyStore from '../../img/MyStore/My-store.png';
 import GreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
 import { Link } from 'react-router-dom';
+import 'animate.css';
 
 function SectionMyProjects() {
   const projects = [
@@ -59,6 +60,30 @@ function SectionMyProjects() {
           </article>
         ))}
       </main>
+      <h1 className='animatedContainer_title animate__bounceInUp'>
+        My PROJECTS
+      </h1>
+      <div className='animatedContainer'>
+        {projects.map((project, index) => (
+          <div key={index} className='box'>
+            <div className='imgBx'>
+              <img src={project.img} alt='img from project' />
+            </div>
+            <Link to={project.link}>
+              <div className='content'>
+                <div>
+                  <h2 className='sectionMyProjectsContainer_article--blockName'>
+                    {project.name}
+                  </h2>
+                  <p className='sectionMyProjectsContainer_article--blockInfo'>
+                    {project.info}
+                  </p>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
