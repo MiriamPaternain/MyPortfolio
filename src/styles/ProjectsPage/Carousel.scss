@@ -17,6 +17,7 @@
   &_slider {
     max-width: 100%;
     justify-self: center;
+
     @media (min-width: 768px) {
       margin: 0 auto;
       width: 60%;
@@ -27,6 +28,7 @@
       justify-content: center;
       justify-items: center;
       justify-self: center;
+
       @media (min-width: 1024px) {
         justify-self: center;
         margin: 0 auto;
