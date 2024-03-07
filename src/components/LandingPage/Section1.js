@@ -5,11 +5,13 @@ function Section1() {
   return (
     <>
       <main className='section1Container'>
-        <p className='section1Container_hi'>¡Hola!</p>
-        <p className='section1Container_me'>
-          Soy Miriam, <br />
-          una apasionada diseñadora y desarrolladora web afincada en Madrid.
-        </p>
+        <div>
+          <p className='section1Container_hi'>¡Hola!</p>
+          <p className='section1Container_me'>
+            Soy Miriam, <br />
+            una apasionada diseñadora y desarrolladora web afincada en Madrid.
+          </p>
+        </div>
 
         <img src={landing1} alt='' className='section1Container_img' />
       </main>

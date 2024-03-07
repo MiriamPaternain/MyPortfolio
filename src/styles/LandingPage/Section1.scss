@@ -34,3 +34,22 @@
     animation-duration: 2s;
   }
 }
+
+@media (min-width: 768px) {
+  .section1Container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &_img {
+      width: 60vw;
+    }
+    &_hi {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-align: right;
+    }
+    &_me {
+      text-align: right;
+    }
+  }
+}
