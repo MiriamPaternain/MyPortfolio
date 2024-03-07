@@ -1,25 +1,18 @@
+import landing1 from '../../img/landing1.jpg';
+import 'animate.css';
+
 function Section1() {
   return (
     <>
-      <div className='container'>
-        <p className='container_words--development'>developer</p>
-        <svg className='container_svg' viewBox='0 0 500 250'>
-          <symbol id='s-text'>
-            <text text-anchor='middle' x='50%' y='120%'>
-              &
-            </text>
-          </symbol>
+      <main className='section1Container'>
+        <p className='section1Container_hi'>¡Hola!</p>
+        <p className='section1Container_me'>
+          Soy Miriam, <br />
+          una apasionada diseñadora y desarrolladora web afincada en Madrid.
+        </p>
 
-          <g className='g-ants'>
-            <use xlinkHref='#s-text' className='text-copy'></use>
-            <use xlinkHref='#s-text' className='text-copy'></use>
-            <use xlinkHref='#s-text' className='text-copy'></use>
-            <use xlinkHref='#s-text' className='text-copy'></use>
-            <use xlinkHref='#s-text' className='text-copy'></use>
-          </g>
-        </svg>
-        <p className='container_words--design'>designer</p>
-      </div>
+        <img src={landing1} alt='' className='section1Container_img' />
+      </main>
     </>
   );
 }

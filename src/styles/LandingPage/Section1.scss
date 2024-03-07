@@ -1,96 +1,36 @@
 @import '../Variables.scss';
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap');
-
-.container {
+.section1Container {
+  width: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  height: 150px;
-  padding: 20px;
-  &_svg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    width: 300px;
-    font: 25rem 'Montserrat';
+  gap: 1rem;
+  &_hi {
+    font-family: $font-family;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    color: $black-color;
+    width: 100%;
+    text-align: center;
+    animation: slideInLeft;
+    animation-duration: 2s;
   }
-  &_words {
-    &--design {
-      width: 200px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      z-index: 3;
-      font-family: 'Baloo Paaji 2', sans-serif;
-      letter-spacing: 4px;
-      color: $primary-color;
-      background-color: transparent;
-      font-weight: 600;
-      font-size: 1.4rem;
-    }
-    &--development {
-      width: 200px;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      font-family: 'Baloo Paaji 2', sans-serif;
-
-      letter-spacing: 4px;
-      color: $primary-color;
-      background-color: transparent;
-      font-weight: 600;
-      font-size: 1.4rem;
-    }
+  &_me {
+    font-family: $font-family;
+    color: $black-color;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    line-height: 2rem;
+    animation: slideInRight;
+    animation-duration: 2s;
   }
-}
-.g-ants {
-  height: 400px;
-  width: 300px;
-}
 
-.text-copy {
-  z-index: 2;
-  fill: none;
-  height: 300px;
-  width: 300px;
-  stroke: $secondary-color;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 8px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
-}
-
-.text-copy:nth-child(1) {
-  stroke: $tertiary-color;
-  animation-delay: -1;
-}
-
-.text-copy:nth-child(2) {
-  stroke: $tertiary-color-2;
-  animation-delay: -2s;
-}
-
-.text-copy:nth-child(3) {
-  stroke: $secondary-color-2;
-  animation-delay: -3s;
-}
-
-.text-copy:nth-child(4) {
-  stroke: $primary-color;
-  animation-delay: -4s;
-}
-
-.text-copy:nth-child(5) {
-  stroke: $black-color;
-  animation-delay: -5s;
-}
-
-@keyframes stroke-offset {
-  100% {
-    stroke-dashoffset: -35%;
+  &_img {
+    width: 100%;
+    animation: slideInLeft;
+    animation-duration: 2s;
   }
 }
