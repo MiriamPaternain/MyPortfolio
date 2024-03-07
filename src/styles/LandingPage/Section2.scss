@@ -1,19 +1,55 @@
 @import '../Variables.scss';
 
 .section2Container {
-  width: 100vw;
-  height: 100px;
-  background-color: $primary-color-3;
-  box-shadow: 0 2px 7px 0 $black-color;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 1200px;
-  &_phrase {
+  &_link {
+    text-decoration: none;
     font-family: $font-family;
-    color: $black-color;
-    padding: 16px;
-    letter-spacing: 1px;
+    color: $primary-color-3;
+    width: 150px;
+    height: 150px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    &--text {
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      fill: white;
+      font-family: $font-family;
+      letter-spacing: 0.05rem;
+      font-weight: 200;
+      font-size: 0.71rem;
+    }
+    &--icon {
+      position: absolute;
+    }
   }
+}
+
+.circleSvg {
+  width: 150px;
+  overflow: visible;
+}
+
+.circlePath {
+  opacity: var(--show, 0);
+  transition: opacity 0.2s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 20s linear infinite;
 }
