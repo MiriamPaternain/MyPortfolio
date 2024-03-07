@@ -6,6 +6,7 @@ import Nav from '../Nav';
 import Footer from '../Footer';
 import backgroundLoader from '../../img/fondo loading.png';
 import { useEffect, useState } from 'react';
+import fixedImg2 from '../../img/fixedImg2.jpg';
 
 function LandingPage() {
   const [loading, setLoading] = useState(true);
@@ -37,6 +38,7 @@ function LandingPage() {
           <Section1 />
           <Section2 />
           <Section3 />
+          <img src={fixedImg2} alt='' className='fixedImg' />
           <SectionMyProjects />
           <Footer />
         </main>
