@@ -2,7 +2,7 @@
 
 .contactContainer {
   margin-top: 5rem;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,7 +36,7 @@
     flex-direction: column;
     gap: 0.3rem;
     width: 70%;
-    margin-bottom: 3rem;
+    //margin-bottom: 3rem;
     &--label {
       color: $black-color;
       font-family: $font-family;
@@ -64,7 +64,7 @@
       border-radius: 15px;
       cursor: pointer;
       color: white;
-      margin-bottom: 2rem;
+      //margin-bottom: 2rem;
       margin-top: 10px;
     }
     &--btn:hover {
