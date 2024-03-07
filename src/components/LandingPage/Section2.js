@@ -1,7 +1,6 @@
 import 'animate.css';
 import clickHere from '../../img/click.png';
 import { Link } from 'react-router-dom';
-import { GiClick } from 'react-icons/gi';
 
 function Section2() {
   return (
