@@ -56,6 +56,10 @@ function Contact() {
           </a>
         </div>
         <p className='contactContainer_formTitle'>Contact Form</p>
+        <p className='contactContainer_formText'>
+          ¿Tienes preguntas? No dudes en escribirme un mensaje rellenando el
+          siguiente formulario:{' '}
+        </p>
         <form ref={form} onSubmit={sendEmail} className='contactContainer_form'>
           <label htmlFor='name' className='contactContainer_form--label'>
             Complete name / Nombre completo
@@ -104,7 +108,7 @@ function Contact() {
             <p className='contactContainer_succesMessage'>
               ¡Gracias por tu mensaje! <br />
               <br />
-              Me pondré en contacto contigo lo antes posible
+              Me pondré en contacto contigo lo antes posible.
             </p>
           )}
         </form>

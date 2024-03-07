@@ -2,7 +2,7 @@
 
 .contactContainer {
   margin-top: 5rem;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,6 +30,13 @@
     font-weight: 600;
     font-size: 1.5rem;
     color: $black-color;
+  }
+  &_formText {
+    font-family: $font-family;
+    text-align: center;
+    letter-spacing: 0.07rem;
+    line-height: 1.3rem;
+    max-width: 70%;
   }
   &_form {
     display: flex;
@@ -100,6 +107,9 @@ textarea::placeholder {
 }
 @media (min-width: 1020px) {
   .contactContainer_form {
+    width: 600px;
+  }
+  .contactContainer_formText {
     width: 600px;
   }
 }
