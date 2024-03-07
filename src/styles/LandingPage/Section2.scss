@@ -1,8 +1,9 @@
 @import '../Variables.scss';
 
 .section2Container {
+  background-color: transparent;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   &_link {
@@ -14,7 +15,7 @@
     background-color: $primary-color;
     border-radius: 50%;
     position: relative;
-    overflow: hidden;
+
     padding: 10px;
     &--text {
       position: absolute;
@@ -35,6 +36,7 @@
 .circleSvg {
   width: 150px;
   overflow: visible;
+  cursor: pointer;
 }
 
 .circlePath {
@@ -52,4 +54,9 @@
 }
 .rotate {
   animation: rotate 20s linear infinite;
+}
+.section2Container_link:hover {
+  transform: scaleZ(-2);
+  box-shadow: 0 0 10px $primary-color;
+  background-color: $tertiary-color;
 }
