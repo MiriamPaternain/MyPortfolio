@@ -60,9 +60,7 @@ function SectionMyProjects() {
           </article>
         ))}
       </main>
-      <h1 className='animatedContainer_title animate__bounceInUp'>
-        My PROJECTS
-      </h1>
+      <h1 className='animatedContainer_title'>My PROJECTS</h1>
       <div className='animatedContainer'>
         {projects.map((project, index) => (
           <div key={index} className='box'>
