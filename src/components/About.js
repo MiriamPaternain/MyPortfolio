@@ -97,7 +97,7 @@ function About() {
                   <li className='li'>Creatividad.</li>
                   <li className='li'>Empatía.</li>
                   <li className='li'>Colaboración.</li>
-                  <li className='li'>Organizada.</li>
+                  <li className='li'>Organización.</li>
                   <li className='li'>Gestión del tiempo.</li>
                 </ul>
               </section>
