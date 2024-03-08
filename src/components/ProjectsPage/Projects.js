@@ -16,7 +16,6 @@ function Projects() {
     <>
       {loading ? (
         <div className='loader'>
-          {/*  <img src={backgroundLoader} alt='loading...' className='loader_img' /> */}
           <div class='lds-roller'>
             <div></div>
             <div></div>

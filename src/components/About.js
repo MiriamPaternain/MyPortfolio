@@ -52,9 +52,10 @@ function About() {
                 className='aboutContainer_intro--img'
               />
               <p className='aboutContainer_intro--text'>
-                Hi! I'm Miriam, a curious human. My motto is keep swimming no
-                matter what problems arise along the way. My goal: always
-                continue learning to improve my own version
+                ¡Hola! Soy Miriam y soy curiosa por naturaleza. Siempre estoy
+                lista para enfrentar cualquier desafío que se presente en mi
+                camino. Mi meta: seguir aprendiendo para mejorar día a día la
+                versión de mi misma.
               </p>
             </section>
 

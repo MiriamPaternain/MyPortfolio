@@ -7,12 +7,12 @@
   align-items: center;
   gap: 3rem;
   width: 100vw;
-
+  height: 80vh;
   position: relative;
   max-width: 1200px;
-  margin: 10rem auto;
+  margin: 6rem auto 4rem;
   @media (min-width: 768px) {
-    margin: 15rem auto;
+    margin: 6rem auto;
   }
   &_slider {
     max-width: 100%;
