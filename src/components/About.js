@@ -92,21 +92,21 @@ function About() {
                 <div className='aboutContainer_skills--line'></div>
                 <p className='aboutContainer_softSkills--title'>Soft Skills</p>
                 <ul className='aboutContainer_softSkills--list'>
-                  <li className='li'>Problem solving.</li>
-                  <li className='li'>Critical thinking.</li>
-                  <li className='li'>Creativity.</li>
-                  <li className='li'>Empathy.</li>
-                  <li className='li'>Collaboration.</li>
-                  <li className='li'>Organized.</li>
-                  <li className='li'>Time management.</li>
+                  <li className='li'>Resolución de problemas.</li>
+                  <li className='li'>Pensamiento crítico.</li>
+                  <li className='li'>Creatividad.</li>
+                  <li className='li'>Empatía.</li>
+                  <li className='li'>Colaboración.</li>
+                  <li className='li'>Organizada.</li>
+                  <li className='li'>Gestión del tiempo.</li>
                 </ul>
               </section>
               <section className='aboutContainer_languages'>
                 <div className='aboutContainer_skills--line  languages'></div>
-                <p className='aboutContainer_languages--title'>Languages</p>
+                <p className='aboutContainer_languages--title'>Idiomas</p>
                 <ul className='aboutContainer_languages--list'>
-                  <li className='li'>English - Advance</li>
-                  <li className='li'>Spanish - Native</li>
+                  <li className='li'>Inglés - Avanzado</li>
+                  <li className='li'>Español - Nativo</li>
                 </ul>
               </section>
             </div>
