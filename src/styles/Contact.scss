@@ -36,14 +36,16 @@
     text-align: center;
     letter-spacing: 0.07rem;
     line-height: 1.3rem;
-    max-width: 70%;
+    width: 70%;
+    max-width: 400px;
   }
   &_form {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
     width: 70%;
-    //margin-bottom: 3rem;
+    max-width: 600px;
+
     &--label {
       color: $black-color;
       font-family: $font-family;
@@ -105,11 +107,8 @@ textarea::placeholder {
   font-family: $font-family;
   letter-spacing: 0.5px;
 }
-@media (min-width: 1020px) {
-  .contactContainer_form {
-    width: 600px;
-  }
-  .contactContainer_formText {
-    width: 600px;
+@media (min-width: 768px) {
+  .contactContainer {
+    margin-top: 0;
   }
 }
