@@ -7,6 +7,10 @@
   max-width: 1200px;
 }
 
-.fixedImg {
-  width: 100vw;
+.fixedImgContainer {
+  position: relative;
+  &_fixedImg {
+    width: 100%;
+    z-index: -1;
+  }
 }
