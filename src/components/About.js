@@ -54,8 +54,8 @@ function About() {
               <p className='aboutContainer_intro--text'>
                 ¡Hola! Soy Miriam y soy curiosa por naturaleza. Siempre estoy
                 lista para enfrentar cualquier desafío que se presente en mi
-                camino. Mi meta: seguir aprendiendo para mejorar día a día la
-                versión de mi misma.
+                camino. Mi meta: seguir aprendiendo para mejorar día a día mi
+                propia versión.
               </p>
             </section>
 
