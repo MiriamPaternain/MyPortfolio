@@ -38,13 +38,8 @@ function LandingPage() {
           <Section1 />
           <Section2 />
           <Section3 />
-          <div className='fixedImgContainer'>
-            <img
-              src={fixedImg2}
-              alt=''
-              className='fixedImgContainer_fixedImg'
-            />
-          </div>
+          <img src={fixedImg2} alt='' className='fixedImg' />
+          <div className='fixedImgContainer'></div>
           <SectionMyProjects />
           <Footer />
         </main>
