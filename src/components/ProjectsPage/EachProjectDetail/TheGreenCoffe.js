@@ -15,7 +15,7 @@ function TheGreenCoffe() {
     <>
       <Nav />
       <main className='myStoreContainer'>
-        <p className='myStoreContainer_title'>My Store</p>
+        <p className='myStoreContainer_title'>The Green Coffee</p>
         <p className='myStoreContainer_resume'>
           The Green Coffee es un proyecto personal de branding que surje por mi
           gran pasión con las plantas. Un lugar donde relajarse rodeado de

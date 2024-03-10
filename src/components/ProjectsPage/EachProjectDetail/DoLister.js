@@ -9,16 +9,16 @@ import git from '../../../img/git.png';
 import terminal from '../../../img/terminal.png';
 import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
-import productDetail from '../../../img/productdetail.png';
-import shoppinCart from '../../../img/shoppingcart.png';
-import products from '../../../img/products.png';
+import DL1 from '../../../img/DL1.png';
+import DL2 from '../../../img/DL2.png';
+import DLS3 from '../../../img/DL3.png';
 
 function DoLister() {
   return (
     <>
       <Nav />
       <main className='myStoreContainer'>
-        <p className='myStoreContainer_title'>My Store</p>
+        <p className='myStoreContainer_title'>Do Lister</p>
         <p className='myStoreContainer_resume'>
           DoLister es una aplicación web para realizar listas. Cada elemento
           añadido se puede tachar una vez que ya se ha realizado y también se
@@ -58,10 +58,9 @@ function DoLister() {
             <TfiWorld className='myStoreContainer_link--icon' /> Link to web
           </button>
         </a>
-        <img src={productDetail} alt='' className='myStoreContainer_img' />
-        <img src={shoppinCart} alt='' className='myStoreContainer_img' />
-        <img src={products} alt='' className='myStoreContainer_img' />
-        <img src='' alt='' className='myStoreContainer_img' />
+        <img src={DL1} alt='' className='myStoreContainer_img' />
+        <img src={DL2} alt='' className='myStoreContainer_img' />
+        <img src={DLS3} alt='' className='myStoreContainer_img' />
       </main>
       <Footer />
     </>
