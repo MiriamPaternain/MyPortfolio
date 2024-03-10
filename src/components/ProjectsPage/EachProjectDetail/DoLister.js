@@ -50,7 +50,7 @@ function DoLister() {
           </button>
         </a>
         <a
-          href='miriampaternain.github.io/DoLister/'
+          href='do-lister-fy0oxecip-miriampaternains-projects.vercel.app/'
           target='_blank'
           rel='noreferrer'
           className='myStoreContainer_link'>
