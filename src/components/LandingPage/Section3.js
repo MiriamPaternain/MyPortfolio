@@ -1,3 +1,6 @@
+import { IoLogoBehance } from 'react-icons/io5';
+import { FaGithub } from 'react-icons/fa';
+
 function Section3() {
   return (
     <>
@@ -8,7 +11,10 @@ function Section3() {
           target='_blank'
           rel='noreferrer'>
           {' '}
-          <button className='section3Container_btn'>Github</button>
+          <button className='section3Container_btn'>
+            <FaGithub className='section3Container_btn--icon' />
+            Github
+          </button>
         </a>
 
         <a
@@ -16,7 +22,10 @@ function Section3() {
           href='https://www.behance.net/miriampaternin'
           target='_blank'
           rel='noreferrer'>
-          <button className='section3Container_btn'>Behance </button>
+          <button className='section3Container_btn'>
+            <IoLogoBehance className='section3Container_btn--icon' />
+            Behance{' '}
+          </button>
         </a>
       </div>
     </>
