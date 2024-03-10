@@ -11,6 +11,8 @@ import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
 import productDetail from '../../../img/productdetail.png';
 import shoppinCart from '../../../img/shoppingcart.png';
+import products from '../../../img/products.png';
+
 function MyStore() {
   return (
     <>
@@ -58,7 +60,7 @@ function MyStore() {
         </a>
         <img src={productDetail} alt='' className='myStoreContainer_img' />
         <img src={shoppinCart} alt='' className='myStoreContainer_img' />
-        <img src='' alt='' className='myStoreContainer_img' />
+        <img src={products} alt='' className='myStoreContainer_img' />
         <img src='' alt='' className='myStoreContainer_img' />
       </main>
       <Footer />
