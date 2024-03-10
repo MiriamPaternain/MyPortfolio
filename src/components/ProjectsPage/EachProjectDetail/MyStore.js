@@ -18,10 +18,10 @@ function MyStore() {
       <main className='myStoreContainer'>
         <p className='myStoreContainer_title'>My Store</p>
         <p className='myStoreContainer_resume'>
-          My Store is a shopping web application. I have used a fake API to
-          simulate the products. Users can filter products by categories and add
-          them to the shopping cart. Each product has its own sheet with
-          details.
+          My Store es una aplicación web de compras. He usado una API falsa para
+          simular los productos. Los usuarios pueden filtrar productos por
+          categorías y agregar al carrito de compras. Cada producto tiene su
+          propia hoja con detalles.
         </p>
         <p className='myStoreContainer_skillsTitle'>Skills:</p>
         <div className='myStoreContainer_skills'>
