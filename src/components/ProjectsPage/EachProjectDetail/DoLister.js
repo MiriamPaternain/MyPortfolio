@@ -20,10 +20,11 @@ function DoLister() {
       <main className='myStoreContainer'>
         <p className='myStoreContainer_title'>Do Lister</p>
         <p className='myStoreContainer_resume'>
-          DoLister es una aplicación web para realizar listas. Cada elemento
-          añadido se puede tachar una vez que ya se ha realizado y también se
-          puede borrar. Ademas cuenta con un buscador para encontrar antes la
-          tarea que se está buscando.
+          DoLister es una aplicación web que te ayuda a organizarte mediante un
+          listado de tareas. Cada elemento añadido se puede tachar cuando se
+          haya finalizado y también se puede borrar. Además cuenta con un
+          buscador que ayuda al usuario a encontrar la tarea que quiere
+          modificar de forma rápida.
         </p>
         <p className='myStoreContainer_skillsTitle'>Skills:</p>
         <div className='myStoreContainer_skills'>

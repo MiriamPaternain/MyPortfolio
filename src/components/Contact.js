@@ -102,7 +102,7 @@ function Contact() {
             className='contactContainer_form--inputMessage'
           />
           <button className='contactContainer_form--btn' type='submit'>
-            Send / Enviar
+            Enviar
           </button>
           {showSuccessMessage && (
             <p className='contactContainer_succesMessage'>
