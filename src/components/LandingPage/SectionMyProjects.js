@@ -1,6 +1,7 @@
 import MyStore from '../../img/MyStore/My-store.png';
 import GreenCoffe from '../../img/greenCoffe.png';
 import DoLister from '../../img/Do Lister.png';
+import bookWiser from '../../img/bookWiser.png';
 import { Link } from 'react-router-dom';
 import 'animate.css';
 
@@ -8,11 +9,12 @@ function SectionMyProjects() {
   const projects = [
     {
       index: 1,
-      img: MyStore,
-      name: 'My Store',
+      img: bookWiser,
+      name: 'bookWiser',
       info: 'Web Development',
-      link: '/Projects/MyStore',
+      link: '/Projects/bookWiser',
     },
+
     {
       index: 2,
       img: GreenCoffe,
@@ -26,6 +28,13 @@ function SectionMyProjects() {
       name: 'Do Lister',
       info: 'Web Development',
       link: '/Projects/DoLister',
+    },
+    {
+      index: 4,
+      img: MyStore,
+      name: 'My Store',
+      info: 'Web Development',
+      link: '/Projects/MyStore',
     },
   ];
   return (

@@ -7,6 +7,7 @@ import Contact from './Contact';
 import MyStore from './ProjectsPage/EachProjectDetail/MyStore';
 import DoLister from './ProjectsPage/EachProjectDetail/DoLister';
 import TheGreenCoffe from './ProjectsPage/EachProjectDetail/TheGreenCoffe';
+import BookWiser from './ProjectsPage/EachProjectDetail/BookWiser';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<LandingPage />} />
         <Route path='/About' element={<About />} />
         <Route path='/Projects' element={<Projects />} />
+        <Route path='/Projects/bookWiser' element={<BookWiser />} />
         <Route path='/Projects/MyStore' element={<MyStore />} />
         <Route path='/Projects/DoLister' element={<DoLister />} />
         <Route path='/Projects/TheGreenCoffe' element={<TheGreenCoffe />} />
