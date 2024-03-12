@@ -11,7 +11,7 @@ function SectionMyProjects() {
       index: 1,
       img: bookWiser,
       name: 'bookWiser',
-      info: 'Web Development',
+      info: 'Web Development and Design',
       link: '/Projects/bookWiser',
     },
 
