@@ -14,6 +14,7 @@ import DL2 from '../../../img/DL2.png';
 import DLS3 from '../../../img/DL3.png';
 
 function DoLister() {
+  const developIcons = [html, css, js, react, git, terminal];
   return (
     <>
       <Nav />
@@ -28,17 +29,14 @@ function DoLister() {
         </p>
         <p className='myStoreContainer_skillsTitle'>Skills:</p>
         <div className='myStoreContainer_skills'>
-          <img src={html} alt='' className='myStoreContainer_skills--icon' />
-          <img src={css} alt='' className='myStoreContainer_skills--icon' />
-          <img src={js} alt='' className='myStoreContainer_skills--icon' />
-          <img src={react} alt='' className='myStoreContainer_skills--icon' />
-          <img src={node} alt='' className='myStoreContainer_skills--icon' />
-          <img src={git} alt='' className='myStoreContainer_skills--icon' />
-          <img
-            src={terminal}
-            alt=''
-            className='myStoreContainer_skills--icon'
-          />
+          {developIcons.map((icon, index) => (
+            <img
+              key={index}
+              src={icon}
+              alt=''
+              className='myStoreContainer_skills--icon'
+            />
+          ))}
         </div>
 
         <a

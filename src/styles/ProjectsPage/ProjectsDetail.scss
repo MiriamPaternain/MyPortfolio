@@ -7,11 +7,11 @@
 }
 
 .myStoreContainer {
-  max-width: 1200px;
-  margin: auto;
+  max-width: 1000px;
+  margin: 7rem auto;
   display: flex;
   flex-direction: column;
-  margin-top: 7rem;
+
   width: 100%;
 
   gap: 2rem;
@@ -30,7 +30,8 @@
     line-height: 1.5rem;
     background-color: $primary-color-3;
     box-shadow: 0 1px 8px 1px #1d313181;
-    width: 100%;
+    margin: auto;
+    //width: 100%;
   }
   &_skillsTitle {
     font-family: $font-family;
