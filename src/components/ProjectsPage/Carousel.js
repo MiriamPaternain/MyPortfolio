@@ -9,13 +9,14 @@ import ThumbnailCarousel from './ThumbnailCarousel';
 import { Link } from 'react-router-dom';
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
+import BookWiser from '../../img/bookWiser.png';
 
 const Carousel = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const carouselRef = useRef();
 
-  const images = [MyStore, TheGreenCoffe, DoLister];
-  const projectNames = ['MyStore', 'TheGreenCoffe', 'DoLister'];
+  const images = [BookWiser, MyStore, TheGreenCoffe, DoLister];
+  const projectNames = ['bookWiser', 'MyStore', 'TheGreenCoffe', 'DoLister'];
 
   const settings = {
     dots: true,
