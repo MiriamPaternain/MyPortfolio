@@ -80,6 +80,7 @@
     &--designIcons {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 2rem;
       gap: 1rem;

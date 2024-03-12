@@ -55,50 +55,50 @@ function Contact() {
             www.linkedin.com/in/miriam-paternain
           </a>
         </div>
-        <p className='contactContainer_formTitle'>Contact Form</p>
+        <p className='contactContainer_formTitle'>Formulario de contacto</p>
         <p className='contactContainer_formText'>
           ¿Tienes preguntas? No dudes en escribirme un mensaje rellenando el
           siguiente formulario:{' '}
         </p>
         <form ref={form} onSubmit={sendEmail} className='contactContainer_form'>
           <label htmlFor='name' className='contactContainer_form--label'>
-            Complete name / Nombre completo
+            Nombre completo
           </label>
           <input
             type='text'
             id='name'
             name='user_name'
-            placeholder='Name last Name / Nombre Apellido'
+            placeholder='Nombre Apellido'
             className='contactContainer_form--input'
           />
           <label htmlFor='email' className='contactContainer_form--label'>
-            Your email / Email
+            Tu email
           </label>
           <input
             type='text'
             id='email'
             name='email'
-            placeholder='example@example.com'
+            placeholder='ejemplo@ejemplo.com'
             className='contactContainer_form--input'
           />
           <label htmlFor='subject' className='contactContainer_form--label'>
-            Subject / Asunto
+            Asunto
           </label>
           <input
             type='text'
             id='subject'
             name='subject'
-            placeholder='Hello!'
+            placeholder='¡Hola!'
             className='contactContainer_form--input'
           />
           <label htmlFor='message' className='contactContainer_form--label'>
-            Message / Mensaje
+            Mensaje
           </label>
           <textarea
             type='text'
             id='message'
             name='message'
-            placeholder='Write your message here'
+            placeholder='Escribe tu mensaje aquí'
             className='contactContainer_form--inputMessage'
           />
           <button className='contactContainer_form--btn' type='submit'>

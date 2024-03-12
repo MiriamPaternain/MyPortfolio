@@ -13,10 +13,26 @@ import react from '../img/react.png';
 import node from '../img/node.png';
 import git from '../img/git.png';
 import terminal from '../img/terminal.png';
+import mongo from '../img/pngwing.com.png';
+import mySql from '../img/mysql_original_wordmark_logo_icon_146417.png';
 import { VscDebugBreakpointLog } from 'react-icons/vsc';
 import { useEffect, useState } from 'react';
 
 function About() {
+  const designIcons = [illustrator, photoshop, indesign, figma, uxUi];
+
+  const developIcons = [
+    html,
+    css,
+    js,
+    react,
+    node,
+    mongo,
+    mySql,
+    git,
+    terminal,
+  ];
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -62,29 +78,37 @@ function About() {
             <section className='aboutContainer_skills'>
               <div className='aboutContainer_skills--line'></div>
               <p className='aboutContainer_skills--title'>Skills</p>
+
               <div className='aboutContainer_skills--designIcons'>
-                <img
-                  className='icon'
-                  src={illustrator}
-                  alt='illustrator icon'
-                />
-                <img src={photoshop} alt='photoshop icon' className='icon' />
-                <img src={indesign} alt='indesign icon' className='icon' />
-                <img src={figma} alt='figma icon' className='icon' />
-                <img src={uxUi} alt='uxui icon' className='icon' />
+                {designIcons.map((icon, index) => (
+                  <img
+                    key={index}
+                    className='icon'
+                    src={icon}
+                    alt='illustrator icon'
+                  />
+                ))}
               </div>
+
               <div className='aboutContainer_skills--separateLine'>
                 <VscDebugBreakpointLog className='breakPoint' />
               </div>
 
               <div className='aboutContainer_skills--developmentIcons'>
-                <img src={html} alt='html icon' className='icon' />
-                <img src={css} alt='css icon' className='icon' />
+                {developIcons.map((icon, index) => (
+                  <img
+                    key={index}
+                    src={icon}
+                    alt='html icon'
+                    className='icon'
+                  />
+                ))}
+                {/*    <img src={css} alt='css icon' className='icon' />
                 <img src={js} alt='javascript icon' className='icon' />
                 <img src={react} alt='react icon' className='icon' />
                 <img src={node} alt='node js icon' className='icon' />
                 <img src={git} alt='git icon' className='icon' />
-                <img src={terminal} alt='terminal icon' className='icon' />
+                <img src={terminal} alt='terminal icon' className='icon' /> */}
               </div>
             </section>
             <div className='softAndLanguages'>
