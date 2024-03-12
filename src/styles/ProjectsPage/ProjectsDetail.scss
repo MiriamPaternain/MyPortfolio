@@ -1,12 +1,13 @@
 @import '../Variables.scss';
 
 .underConstrucion {
-  width: 100vw;
+  width: 100%;
+  max-width: 1200px;
   margin-top: 3rem;
 }
 
 .myStoreContainer {
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -29,6 +30,7 @@
     line-height: 1.5rem;
     background-color: $primary-color-3;
     box-shadow: 0 1px 8px 1px #1d313181;
+    width: 100%;
   }
   &_skillsTitle {
     font-family: $font-family;
