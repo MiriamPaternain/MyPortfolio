@@ -15,17 +15,7 @@ import { FaGithub } from 'react-icons/fa';
 import { TfiWorld } from 'react-icons/tfi';
 
 function BookWiser() {
-  const developIcons = [
-    html,
-    css,
-    js,
-    react,
-    node,
-    mongo,
-    mySQL,
-    git,
-    terminal,
-  ];
+  const developIcons = [html, css, js, react, node, mongo, git, terminal];
   const designIcons = [illustrator, figma];
 
   return (
