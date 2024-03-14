@@ -68,10 +68,21 @@ function About() {
                 className='aboutContainer_intro--img'
               />
               <p className='aboutContainer_intro--text'>
-                ¡Hola! Soy Miriam y soy curiosa por naturaleza. Siempre estoy
-                lista para enfrentar cualquier desafío que se presente en mi
-                camino. Mi meta: seguir aprendiendo para mejorar día a día mi
-                propia versión.
+                ¡Hola! Soy Miriam, una apasionada diseñadora y desarrolladora
+                web.
+                <br /> Desde hace unos años descubrí mi pasión por la tecnología
+                y comencé a sentir curiosidad por la programación, aunque no
+                sería hasta el 2023 cuando estudiaría un bootcamp de
+                programación que impulsaría mi carrera profesional.
+                <br /> Me encantan los retos, cada obstáculo es una oportunidad
+                para crecer y aprender algo nuevo, y estoy constantemente
+                buscando formas de expandir mis horizontes y mejorar en lo que
+                hago.
+                <br /> Mi filosofía es simple: nunca dejar de aprender. <br />
+                Si estás buscando a alguien apasionado, profesional y dispuesto
+                a enfrentar cualquier desafío, no dudes en contactarme para que
+                nos podamos conocer.
+                <br /> ¡Gracias por visitar mi sitio web!
               </p>
             </section>
 

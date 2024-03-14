@@ -8,7 +8,7 @@ import node from '../../../img/node.png';
 import git from '../../../img/git.png';
 import terminal from '../../../img/terminal.png';
 import mongo from '../../../img/pngwing.com.png';
-import mySQL from '../../../img/mysql_original_wordmark_logo_icon_146417.png';
+
 import illustrator from '../../../img/ilustrador.png';
 import figma from '../../../img/figma.png';
 import { FaGithub } from 'react-icons/fa';

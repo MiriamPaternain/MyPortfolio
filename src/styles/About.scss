@@ -2,10 +2,11 @@
 
 .aboutContainer {
   max-width: 1200px;
-  margin-top: 4.5rem;
+  margin: auto;
   display: flex;
+
   flex-direction: column;
-  margin: 4.5rem 0 0 0;
+  padding-top: 4.5rem;
   width: 100vw;
   &_intro {
     width: 100vw;
@@ -18,7 +19,7 @@
     }
     &--text {
       font-family: $font-family;
-      font-size: 0.8rem;
+      font-size: 0.45rem;
       width: 45%;
       max-width: 500px;
 
@@ -31,18 +32,18 @@
       top: 50%;
       left: 50%;
       transform: translate(-95%, -50%);
-      line-height: 23px;
+      line-height: 0.7rem;
       display: flex;
       opacity: 0.7;
       align-items: center;
       @media (min-width: 600px) {
-        font-size: 1.4rem;
-        line-height: 3rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
         padding: 1rem;
       }
       @media (min-width: 1024px) {
-        font-size: 1.5rem;
-        line-height: 3rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
         padding: 1rem;
         max-width: calc(50% - 30px);
       }
