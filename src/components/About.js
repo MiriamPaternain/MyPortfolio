@@ -73,7 +73,7 @@ function About() {
                 <br /> Desde hace unos años descubrí mi pasión por la tecnología
                 y comencé a sentir curiosidad por la programación, aunque no
                 sería hasta el 2023 cuando estudiaría un bootcamp de
-                programación que impulsaría mi carrera profesional.
+                programación web que impulsaría mi carrera profesional.
                 <br /> Me encantan los retos, cada obstáculo es una oportunidad
                 para crecer y aprender algo nuevo, y estoy constantemente
                 buscando formas de expandir mis horizontes y mejorar en lo que

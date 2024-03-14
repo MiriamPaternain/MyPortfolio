@@ -13,7 +13,7 @@
 
   max-width: 1200px;
   margin: auto;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
   height: 4.5rem;
   &_logo {
@@ -22,8 +22,9 @@
     width: 55px;
     height: 35px;
     transform: translateY(6px);
-    margin-left: 30px;
+    padding-left: 30px;
     margin-top: 20px;
+    cursor: pointer;
   }
   &_menuBtn {
     grid-column-start: 3;

@@ -14,7 +14,9 @@ function Nav() {
   return (
     <>
       <div className='navContainer'>
-        <img src={LogoWhite} alt='white logo' className='navContainer_logo' />
+        <Link to={'/'}>
+          <img src={LogoWhite} alt='white logo' className='navContainer_logo' />
+        </Link>
         <button className='navContainer_menuBtn' onClick={toggleMenu}>
           <RxHamburgerMenu className='hamburger-menu-icon' />
         </button>
