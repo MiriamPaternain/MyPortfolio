@@ -1,18 +1,18 @@
 @import '../Variables.scss';
 
-.underConstrucion {
+/* .underConstrucion {
   width: 100%;
   max-width: 1200px;
   margin-top: 3rem;
-}
+} */
 
 .myStoreContainer {
-  max-width: 1000px;
-  margin: 7rem auto;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-
-  width: 100%;
+  padding-top: 6rem;
+  width: 100vw;
 
   gap: 2rem;
   &_title {

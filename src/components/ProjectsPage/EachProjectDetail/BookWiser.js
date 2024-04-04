@@ -21,7 +21,7 @@ function BookWiser() {
   return (
     <>
       <Nav />
-      <main className='myStoreContainer'>
+      <div className='myStoreContainer'>
         <p className='myStoreContainer_title'>bookWiser</p>
         <p className='myStoreContainer_resume'>
           Esta web está actualmente en proceso de desarrollo.
@@ -70,7 +70,7 @@ function BookWiser() {
         {/* <img src={DL1} alt='' className='myStoreContainer_img' />
         <img src={DL2} alt='' className='myStoreContainer_img' />
         <img src={DLS3} alt='' className='myStoreContainer_img' /> */}
-      </main>
+      </div>
       <Footer />
     </>
   );
