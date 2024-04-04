@@ -9,11 +9,12 @@
 
 .fixedImgContainer {
   width: 100%;
+  max-width: 1200px;
   height: 15rem;
   background-color: transparent;
 }
 .fixedImg {
-  //width: 100%;
+  width: 100%;
   height: 100%;
   max-width: 1200px;
   justify-items: center;
